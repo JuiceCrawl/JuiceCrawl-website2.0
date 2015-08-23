@@ -1,0 +1,217 @@
+.ghost-button {
+	width: auto;
+}
+
+.vertical-center {
+	position: relative;
+	top: 50%;
+	padding-top: 10px;
+}
+
+.navbar-brand.otherpages img{
+	max-width: 190px;
+	max-height: 60px;
+	padding-bottom: 25px;
+}
+
+.event-title{
+font-weight:normal;
+color: #fff;
+text-align: center;
+font-size: 50px;
+}
+
+.total-value{
+	font-size: 40px;
+}
+
+.info-box{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+}
+
+.color-ccc{
+	color: #ccc;
+}
+
+.white{
+	color: #fff;
+}
+
+.offer{
+	margin: 20px auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+.section-0{
+	background-color: #000;
+	padding-top: 20px;
+}
+.2.3section-0 .btn{
+	border-radius: 0;
+}
+
+.section-0 img{
+	padding-top: 5%;
+}
+
+.section-0 .border-box{
+	border: 1px solid #ddd;
+	border-radius: 30px;
+	padding: 5px;
+	#background-image: url(../images/footer_lodyas.png);
+	background-image: url(../images/escheresque_ste.png);
+	#background-color: #fff;
+	#margin-left: 5px;
+}
+
+.section-0 .panel{
+	width: 60%;
+	border-radius: 0;
+	text-transform: uppercase;
+	border: none;
+}
+
+.section-0 .panel .panel-heading, .section-0 .panel .panel-body, .section-0 .panel .panel-footer{
+	padding: 3px;
+}
+
+.section-0 .panel .panel-heading{
+	font-size: 0.5em;
+	padding: 5px 3px;
+	letter-spacing: 5px;
+	overflow-wrap: break-word;
+	border: 0;
+	border-radius: 0;
+	background-color: #FF3535;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.section-0 .panel .panel-footer{
+	padding: 0; 
+	border-radius: 0;
+	letter-spacing: 1px;
+	border: 0;
+	#font-weight: bold;
+	font-size: 0.6em;
+	#color: #ddd;
+}
+
+.section-0 .panel .panel-body{
+	font-size: 1.5em;
+	padding: 0;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	background-color: #eee;
+}
+
+.section-0 .time .fa{
+	font-size: 3em;
+}
+
+.section-0 .time p{
+	font-weight: bold;
+}
+
+.border-box h4{
+	#color:;
+}
+.section-0 .time{
+	#padding: 5% 0;
+}
+
+.section-0 .place{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 300px){
+
+	.section-0{
+		height: 500px;
+	}
+
+}
+
+.whos-involved {
+	padding-bottom: 20px;
+	border-top: 4px solid green;
+	border-bottom: 4px solid green;
+	background-image: url(../images/footer_lodyas.png);
+}
+
+.icons{
+	width: 85%;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.what-you-get h3{
+	text-transform: uppercase;
+	margin: 40px 0 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.bg-juice-icons{
+	#height: 400px;
+	#background-color: #1a244c;
+	background-image: url(../img/restaurant_icons.png);
+}
+
+.bg-juice-icons > p{
+	width: 50%;
+
+}
+
+.bg-juice-icons img{
+	#opacity: 0.2;
+}
+
+.bg-juice-icons .partner-icons{
+	#padding: 40px;
+}
+
+.bg-juice-icons .partner-icons img{
+	height: 120px;
+	margin: 15px auto;
+}
+
+.bg-juice-icons .partner-icons p{
+	min-height: 120px;
+}
+
+.bg-juice-icons .other-icons{
+	padding: 20px;
+}
+
+.bg-juice-icons .other-icons img{
+	width: 20%;
+	height: 100px;
+}
+
+.bg-juice-icons .other-icons p{
+	min-height: 70px;
+}
+
+.bg-juice-icons .value-box{
+	width: 20%;
+	margin: 0 auto;
+}
+
+.bg-juice-icons .value-box .list-group-item{
+	border-radius: 0;
+}
+
+.h3 {
+	margin: 0;
+}
+
+.padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
