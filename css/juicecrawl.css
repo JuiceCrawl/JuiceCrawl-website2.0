@@ -79,11 +79,12 @@ font-family: "Century Gothic",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-s
 }
 .ghost-button {
   display: inline-block;
-  width: 200px;
+  #width: 200px;
   padding: 8px;
   color: #fff;
   border: 5px solid #dd375a;
-  border-radius: 65px;
+  border-radius: 50px;
+  background-color: #222;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -158,7 +159,8 @@ body .navbar {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    #color: #fff;
+    color: #bbb;
 }
 
 .navbar-default .nav li a:hover,
@@ -311,7 +313,8 @@ top:0;
 }
 
 section h2{
-    margin: 10px 0 20px;
+    #margin: 10px 0 20px;
+    margin: 25px 0;
     font-family: "Century Gothic",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-variant: small-caps;
 }
