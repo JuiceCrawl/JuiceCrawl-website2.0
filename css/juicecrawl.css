@@ -43,7 +43,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    outline: 0;
+    text-decoration: none;
 }
 
 a {
@@ -79,7 +79,7 @@ font-family: "Century Gothic",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-s
 }
 .ghost-button {
   display: inline-block;
-  width: 200px;
+  width: 225px;
   padding: 8px;
   color: #fff;
   border: 5px solid #dd375a;
@@ -158,7 +158,7 @@ body .navbar {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: #bbb;
 }
 
 .navbar-default .nav li a:hover,
@@ -377,6 +377,17 @@ height: 100%;
     background: none;
 }
 
+.section-heading a{
+    color: #333;
+}
+
+.section-heading a:hover,
+.section-heading a:focus,
+.section-heading a:active,
+.section-heading a.active {
+    color: #fec503;
+}
+
 .event-caption {
     margin: 0 auto;
     max-width: 400px;
@@ -385,6 +396,7 @@ height: 100%;
     background-position: center;
     color: #333;
 }
+
 
 a.event-caption img{
     opacity: 0.4;
