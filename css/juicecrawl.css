@@ -210,10 +210,34 @@ body .navbar {
     }
 }
 
-.container-fluid {
+.container, .container-fluid {
   padding-right: 0px;
   padding-left: 0px;
 }
+
+/* to compensate for seth meyers video and ny post video and trailer video but not most effective.. */
+.reset{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* Media Quotes on front page  */
+.quotes{
+    padding-bottom: 20px;
+    margin-left: 25px; 
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.quotes h3{
+    padding-left: 30px;
+}
+.quotes span{
+    font-size: .7em;
+    font-style: italic;
+}
+
+
 
 .media-partners img{
      height: 150px;

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,125 +30,119 @@
     
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <title>Juice Crawl: A Pub Crawl For Cold Pressed Juice</title>
-<!--Java Script -->
+    <!--Java Script -->
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/ui-bootstrap-tpls-0.11.2.js"></script>
     <script type="text/javascript" src="js/app.js"></script>    
-<!--Data Layer for Google Tag Manager -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!--Data Layer for Google Tag Manager -->
     <script> dataLayer = []; </script>
-<!--Pop Up Only Displays Once-->  
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-
-<!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Custom CSS -->
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link href="css/juicecrawl.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">    
-
-<!-- Fonts -->
+    <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','//connect.facebook.net/en_US/fbevents.js');
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '686430014825310');
-fbq('track', "PageView");
-fbq('track', 'ViewContent');
-fbq('track', 'Search');
-fbq('track', 'AddToCart');
-fbq('track', 'AddToWishlist');
-fbq('track', 'InitiateCheckout');
-fbq('track', 'AddPaymentInfo');
-fbq('track', 'Purchase', {value: '0.00', currency: 'USD'});
-fbq('track', 'Lead');
-fbq('track', 'CompleteRegistration');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=686430014825310&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-<script type='application/ld+json'>
-  {"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/juicecrawl.com\/","name":"Juice Crawl","potentialAction":{"@type":"SearchAction","target":"http:\/\/juicecrawl.com\/?s={search_term_string}","query-input":"required
-  name=search_term_string"}}
-</script>
+    fbq('init', '686430014825310');
+    fbq('track', "PageView");
+    fbq('track', 'ViewContent');
+    fbq('track', 'Search');
+    fbq('track', 'AddToCart');
+    fbq('track', 'AddToWishlist');
+    fbq('track', 'InitiateCheckout');
+    fbq('track', 'AddPaymentInfo');
+    fbq('track', 'Purchase', {value: '0.00', currency: 'USD'});
+    fbq('track', 'Lead');
+    fbq('track', 'CompleteRegistration');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=686430014825310&ev=PageView&noscript=1"/></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- LD JSON for Google Display, needs work -->
+    <script type='application/ld+json'>
+      {"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/juicecrawl.com\/","name":"Juice Crawl","potentialAction":{"@type":"SearchAction","target":"http:\/\/juicecrawl.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
-
 <body class="index">
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5F596V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5F596V');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5F596V"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5F596V');</script>
+    <!-- End Google Tag Manager -->
 
-<!-- Popup -->    
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">    
-    <!-- Modal content-->
-    <div class="modal-content">
-
-<div class="modal-body text-center">
-                <div class="row">
+    <!-- Popup -->    
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+           <!-- Modal content-->
+           <div class="modal-content">
+              <div class="modal-body text-center">
+                 <div class="row">
                     <button  type="button" class="close-desktop hidden-xs">
-                    <div class="col-md-12" aria-hidden="true " data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
+                       <div class="col-md-12" aria-hidden="true " data-dismiss="modal" aria-hidden="true">&times;</div>
+                    </button>
                     <button type="button" class="close text-muted visible-xs mobile mbuttonpos" data-dismiss="modal" aria-hidden="true">close&nbsp;</button>
-                </div>
-                <div class="row">
+                 </div>
+                 <div class="row">
                     <div class="col-md-4" id="jclogo">
-                        <img src="images/logo10.png" class="center img-responsive" alt="circle logo">
+                       <img src="images/logo10.png" class="center img-responsive" alt="circle logo">
                     </div>
                     <div class="col-md-8">
-                        <h2 class="text-muted newsletter">Sign Up For Juice Crawl News</h2>
-                        <h4>Learn about the latest events &#43; other juicy news.</h4>
+                       <h2 class="text-muted newsletter">Sign Up For Juice Crawl News</h2>
+                       <h4>Learn about the latest events &#43; other juicy news.</h4>
                     </div>
-           </div>
-                <br>
-                <div id="mc_embed_signup">
-                    <form id="mc-embedded-subscribe-form" class="validate" action="//juicecrawl.us9.list-manage.com/subscribe/  post?u=724da0297c9eaf99cedb55c09&amp;id=0e0eeacbf5" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
-                        <div class="input-group input-group-lg hidden-xs">
+                 </div>
+                 <br>
+                 <div id="mc_embed_signup">
+                    <form id="mc-embedded-subscribe-form" class="validate" action="//juicecrawl.us9.list-manage.com/subscribe/post?u=724da0297c9eaf99cedb55c09&amp;id=0e0eeacbf5" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+                        <div class="input-group input-group-lg">
                             <input name="EMAIL" type="email" class="form-control" placeholder="email address" required>
+                            <br>
+                            <select id="group" name="group[20525]" type="dropdown" class="form-control" required>
+                              <option value="">select a city</option>
+                              <option value="1">NYC</option> 
+                              <option value="4">DC</option> 
+                              <option value="2">LA</option> 
+                              <option value="8">My city isn't listed!</option>      
+                            </select>
                             <span class="input-group-btn">
-                                <button id="mc-embedded-subscribe" class="btn btn-success popup-web" type="submit" name="subscribe" >Subscribe</button>
+                                <button id="mc-embedded-subscribe" class="btn btn-success popup-web" type="submit" name="subscribe">Subscribe</button>
                             </span>
                         </div>
-                        <div class="visible-xs">
+<!--                         <div class="visible-xs">
                             <input name="EMAIL" type="email" class="form-control input-lg" placeholder="email address" required><br>
-                            <button id="mc-embedded-subscribe" class="btn btn-success btn-lg popup-mobile" type="submit" name="subscribe">
-                                Subscribe
-                            </button>
+                            <button id="mc-embedded-subscribe" class="btn btn-success btn-lg popup-mobile" type="submit" name="subscribe">Subscribe</button>
                         </div>
-                    </form>
-                </div>
-            </div>
-       
-<!--End mc_embed_signup-->
- 
-</div>
-</div>
-</div>
-<script type="text/javascript">
- $(document).ready(function() {
-     if ($.cookie('pop') == null) {
-         $('#myModal').modal('show');
-         $.cookie('pop', '1');
-     }
- });
-</script>
-
-<!-- Navigation -->
+ -->                    </form>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </div>
+    <!--End mc_embed_signup-->
+    <script type="text/javascript">
+     $(document).ready(function() {
+         if ($.cookie('pop') == null) {
+             $('#myModal').modal('show');
+             $.cookie('pop', '1');
+         }
+     });
+    </script>
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -191,7 +183,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- /.container-fluid -->
     </nav>
-
     <!-- Header -->
     <header>
         <div class="container">
@@ -204,8 +195,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </header>
-<!--Testimonial Section -->
+<!-- First Section -->
  <section class="bg-juice-icons">
+ <div class="container">
+      <div class="row">
+       <div class="col-lg-12 text-center">
+        <h1 class="section-heading text-center"><h1>Sample up to 30 different juices + a workout!</h1></a>
+            
+       </div>
+      </div>
+<!--Testimonial Section 
     <div class="container">
       <div class="row">
        <div class="col-lg-12 text-center">
@@ -232,45 +231,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>               
             </div>
        </div>
-      </div>
- <!-- 
- Testimonial Slider Attempt
- <section class="row text-center text-muted ">
-            <h1 class="section-heading text-center"><a href="http://www.juicecrawl.com/testimonials.html"> Testimonials</h1></a>
-            <div class="" style="height: 220px">
-                <carousel interval="5000">
-                    <slide>
-                        <div style="width: 40%; margin:auto;">
-	                        <img src="img/testimonials/jake.png" style="height:100px;" class="img-responsive center-block" alt="jake">
-	                		<div>
-		                    <h4>Jake G.</h4>
-		                    <p class="text-muted text-center">"Had the time of my life...Wow I have never had so many varieties of juice and SO MUCH OF IT!"</p>
-	                		</div>
-                		</div> 
-                    </slide>
-                    <slide>
-                    <div style="width: 40%; margin:auto;">
-                        <img src="img/testimonials/shameka.png" style="height:100px" class="img-responsive center-block" alt="shameka">
-			                <div>
-			                    <h4>Shameka K.</h4>
-			                    <p class="text-muted text-center">"Everyone should try it at least once. I discovered great NYC juice bars that I didn't even know existed, and I made some new friends."</p>
-			                </div> 
-			        </div>        
-                    </slide>
-                    <slide>
-                    <div style="width: 40%; margin:auto;">
-                        <img src="img/testimonials/anne.png" style="height:100px" class="img-responsive center-block" alt="jake">
-		                <div>
-		                    <h4>Anne M.</h4>
-		                    <p class="text-muted text-center">"What a blast! I absolutely LOVE these events and look forward to going to more. I get to meet new people, connect with like minded health lovers, and I feel amazing drinking juice all day."</p>
-		                </div> 
-		            </div>     
-                    </slide>
-                </carousel>
-                
+      </div>-->
+<!--Quote Section -->
+    <section class="container reset">
+        <div class="row reset">
+            <div class="quotes"><img width="25%" src="img/nyt.png"><h3>"Juice Crawl was so enthusiastically received" - <span>NYTimes</span></h3></div>
+            <div class="quotes"><img width="25%" src="img/nyp.png"><h3>"Many were keen on being able to let loose on nothing more than juice" - <span>NYPost</span></h3></div>
+            <div class="quotes"><img width="10%" src="img/drOz.png"><h3>"Juice Crawl is now a full-fledged health staple" - <span>Dr. Oz</span></h3></div>
+         <!-- <div class="col-md-1 col-s-0 reset"></div>
+            <div class="su-youtube su-responsive-media-yes text-center col-md-3 visible-xs reset">
+                  <iframe src="http://www.youtube.com/embed/Aw1wXb85gTo?modestbranding=1&controls=0&iv_load_policy=3&rel=0&showinfo=0&color=white&enablejsapi=1" frameborder="0"></iframe>
             </div>
-       
--->
+            <div class="su-youtube su-responsive-media-yes text-center col-md-3 hidden-xs reset">
+                <iframe src="http://www.youtube.com/embed/Aw1wXb85gTo?modestbranding=1&controls=0&iv_load_policy=3&rel=0&showinfo=0&color=white&enablejsapi=1" frameborder="0"></iframe>
+            </div>
+            <div class="col-md-4 text-center reset">
+                <img src="img/NYPost.png">
+            </div>
+            <div class="su-youtube su-responsive-media-yes text-center col-md-3 visible-xs reset">
+                  <iframe src="http://www.youtube.com/embed/spOnIBhb7jc?modestbranding=1&controls=0&iv_load_policy=3&rel=0&showinfo=0&color=white" frameborder="0"></iframe>
+            </div>
+            <div class="su-youtube su-responsive-media-yes text-center col-md-3 hidden-xs reset">
+                <iframe src="http://www.youtube.com/embed/spOnIBhb7jc?modestbranding=1&controls=0&iv_load_policy=3&rel=0&showinfo=0&color=white" frameborder="0"></iframe>
+            </div>       
+            </div>
+            <div class="col-md-1 col-s-0 reset"></div> -->
+        </div>
+    </section>
 <!--Video Section -->
     <section>
         <div class="container">
@@ -284,6 +271,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                </div>
               </center>
             </div>
+        </div>
+    </section>
 
 <!--Event Section -->
 <section id="events">
@@ -365,7 +354,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>               
             </div>
             </a>-->
-<!-- 7 Event -->
+<!-- 7 Event 
              <a href= "http://www.brownpapertickets.com/event/juicecrawl.com/2485123" target="_blank">
             <div class="col-md-4 col-sm-6 col-xs-6">
                         <img src="img/jan2016.png" class="img-responsive" alt="Juice Crawl 2016 Event Image">
@@ -375,8 +364,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>               
             </div>
             </a>
+            -->
 <!-- 8 Event -->
-        	<a href= "http://www.brownpapertickets.com/event/juicecrawl.com/2486861" target="_blank">
+        	<!--<a href= "http://www.brownpapertickets.com/event/juicecrawl.com/2486861" target="_blank">
             <div class="col-md-4 col-sm-6 col-xs-6">
              <img src="img/vday.png" class="img-responsive" alt="Valentine's Day Juice Crawl Event Image">
                 <div class="event-caption">
@@ -384,17 +374,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <p class="text-muted">Tickets Available!</p>
                 </div>               
             </div>
-            </a>
+            </a>-->
 <!-- Event -->
-        	<a href= "http://www.brownpapertickets.com/event/juicecrawl.com/2486879" target="_blank">
+        	<!-- <a href= "http://www.brownpapertickets.com/event/juicecrawl.com/2486879" target="_blank">
             <div class="col-md-4 col-sm-6 col-xs-6">
              <img src="img/stpats.png" class="img-responsive" alt="St. Patrick's Day Juice Crawl Event Image">
                 <div class="event-caption">
-                        <h4>March 19</h4>
+                        <h4>March 20</h4>
                         <p class="text-muted">Tickets Available!</p>
                 </div>               
             </div>
-            </a>
+            </a> -->
 <!-- Event -->
         	<a href= "http://www.brownpapertickets.com/event/juicecrawl.com/2486882" target="_blank">
             <div class="col-md-4 col-sm-6 col-xs-6">
@@ -446,7 +436,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
             </a>
 <!--Last Event -->
-            <a href= "contact.html#newsletter" target="_blank">
+            <a href="contact.html#newsletter" target="_blank">
             <div class="col-md-4 col-sm-6 col-xs-6">
                         <img src="img/moresoon.png" class="img-responsive" alt="More Events Soon">
                     <div class="event-caption">
@@ -455,12 +445,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>               
             </div>
             </a>
-<!--End Event -->
+            <a href="corporate.html" target="_blank">
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                        <img src="img/private.png" class="img-responsive" alt="More Events Soon">
+                    <div class="event-caption">
+                        <h4>Private Events</h4>
+                        <p class="text-muted">Contact us to arrange a private event for your friends, family or company.</p>
+                </div>               
+            </div>
+            </a>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 </section>
-</section>
+<!--End Event -->
 </section>
 </section>
 <!-- Media Coverage -->
@@ -483,7 +481,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <a href="http://gothamist.com/2014/10/17/weekend_food_events_nyc.php" target="_blank"><img class="img-responsive center-block" src="images/gothamist.png" alt="Gothamist Logo"></a>
                             </div>
                              <div class="col-md-2 col-sm-2">
-                                <a href="http://us1.campaign-archive1.com/?u=6e7285228004ce58879d3c4fa&id=775f21edc4&e=1ceaa49e2a" target="_blank"><img class="img-responsive center-block" src="images/wellgood.jpg" alt="Well + Good Logo"></a>
+                                <a href="http://us1.campaign-archive1.com/?u=6e7285228004ce58879d3c4faid=775f21edc4&e=1ceaa49e2a" target="_blank"><img class="img-responsive center-block" src="images/wellgood.jpg" alt="Well + Good Logo"></a>
                             </div>            
                         </div>
                     </slide>
