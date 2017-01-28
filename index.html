@@ -27,13 +27,13 @@
     <meta name="twitter:site" content="@juicecrawl" />
     <!-- Pinterest confirm webstie -->
     <meta name="p:domain_verify" content="d135563bafe94943f61a8a85da34e610"/>
-    
+
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <title>Juice Crawl: A Pub Crawl For Cold Pressed Juice</title>
     <!--Java Script -->
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/ui-bootstrap-tpls-0.11.2.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>    
+    <script type="text/javascript" src="js/app.js"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link href="css/juicecrawl.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">    
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
@@ -84,7 +84,7 @@
     })(window,document,'script','dataLayer','GTM-5F596V');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Popup -->    
+    <!-- Popup -->
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -122,18 +122,18 @@
                                   <option value="2">LA</option>
                                   <option value="4">DC</option>
                                   <option value="64">San Francisco</option>
-                                  <option value="262144">Columbus, OH</option>  
+                                  <option value="262144">Columbus, OH</option>
                                   <option value="128">Chicago</option>
                                   <option value="16">Portland, OR</option>
                                   <option value="32">Singapore</option>
-                                  <option value="8">My city isn't listed!</option>      
+                                  <option value="8">My city isn't listed!</option>
                                 </select>
                             </div>
-                            <span class="input-group-btn"> 
+                            <span class="input-group-btn">
                                 <button id="mc-embedded-subscribe" class="btn btn-success popup-web" type="submit" name="subscribe">Subscribe</button>
                             </span>
                         </div>
-   
+
 <!--                         <div class="visible-xs">
                             <input name="EMAIL" type="email" class="form-control input-lg" placeholder="email address" required><br>
                             <button id="mc-embedded-subscribe" class="btn btn-success btn-lg popup-mobile" type="submit" name="subscribe">Subscribe</button>
@@ -154,6 +154,7 @@
          }
      });
     </script>
+<div id='wrap'>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -201,9 +202,10 @@
             <div class="intro-text">
                 <div class="juicecrawl-logo"><img src="img/jclogo.png" class="center-block img-responsive" style="max-width:70%"alt="Juice Crawl Logo">
                 </div>
-                <div class="intro-lead-in">A Pub Crawl for Juice</div>
+               <!--  <div class="intro-lead-in">A Pub Crawl for Juice</div> -->
                 <div class="intro-heading">Hangovers Never Felt So GOOD!</div>
-                <a href="#events" class="page-scroll btn btn-xl ghost-button" id="tickets-button">Buy Tickets</a>
+                <a id="ticket-button" href="#events" class="page-scroll btn btn-xl ghost-button">Buy Tickets</a>
+
             </div>
         </div>
     </header>
@@ -212,18 +214,39 @@
  <div class="container">
       <div class="row">
        <div class="col-lg-12 text-center">
-        <h1 class="section-heading text-center"><h1>Sample up to 30 different juices + a workout!</h1></a>
-            
+        <h1 class="section-heading text-center">What's a Juice Crawl?</h1>
+        <h3 class="section-heading text-center">Think pub crawl for juice. Our events cover a mix of traveling to juice bars, drinking a lot of green juice and working out.
+        </h3>
+
+            <div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div id='scroll-to' class="su-youtube su-responsive-media-yes">
+                            <iframe class="text-center" width="400" height="320" src="http://www.youtube.com/embed/Aw1wXb85gTo?modestbranding=1&controls=0&iv_load_policy=3&rel=0&showinfo=0&color=white" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+        <h3 class="col-sm-12 section-heading text-center">We think healthy lifestyles can be social and fun.
+        </h3>
+        <div style="width: 70%; margin: 0 auto">
+            <img src="img/group-pics/july2015b.jpg" class="center-block img-responsive" alt="Juice Crawl Image">
+        </div>
+        <h3 class="section-heading text-center">We're the world's first Juice Crawl and our events have been featured nationally and internationally - just google us! We're setting a trend.
+        </h3>
        </div>
       </div>
 <!--Quote Section -->
     <section class="container reset">
         <div class="row reset">
-            <div class="quotes"><img width="25%" src="img/nyt.png"><h3>"Juice Crawl was so enthusiastically received" - <span>NYTimes</span></h3></div>
-            <div class="quotes"><img width="25%" src="img/nyp.png"><h3>"Many were keen on being able to let loose on nothing more than juice" - <span>NYPost</span></h3></div>
-            <div class="quotes"><img width="10%" src="img/drOz.png"><h3>"Juice Crawl is now a full-fledged health staple" - <span>Dr. Oz</span></h3></div>
+            <div class="quotes col-sm-4"><p>"Juice Crawl was so enthusiastically received" - <span>NYTimes</span></p></div>
+            <div class="quotes col-sm-4"><p>"Many were keen on being able to let loose on nothing more than juice" - <span>NYPost</span></p></div>
+            <div class="quotes col-sm-4"><p>"Juice Crawl is now a full-fledged health staple" - <span>Dr. Oz</span></p></div>
         </div>
     </section>
+    <div><img src="img/group-pics/earthday2015b.jpg" class="center-block img-responsive" alt="Juice Crawl Image"></div>
+    <h3 class="section-heading text-center">Experience something you've never tried before. Sample up to 30 different juices + a workout! A ticket covers it all.</h3>
 <!--Video Section -->
     <section>
         <div class="container">
@@ -245,7 +268,10 @@
     <div class="container">
         <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="section-heading"> Juice Crawl: Select An Event </h1>
+                    <!-- <h1 class="section-heading"> Juice Crawl: Select An Event </h1> -->
+                    <!-- EevntBrite Widget -->
+                    <h2>St. Pat's Day Juice Crawl - March 18th - Soho</h2>
+                   <div style="width:100%; text-align:left;"><iframe src="https://www.eventbrite.com/tickets-external?eid=31531145505&ref=etckt" frameborder="0" height="445" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ></div></div>
 <!-- Event -->
         	<!-- <a href= "http://www.brownpapertickets.com/event/juicecrawl.com/2486889" target="_blank">
             <div class="col-md-4 col-sm-6 col-xs-6">
@@ -253,8 +279,8 @@
                 <div class="event-caption">
                         <h4>June 26</h4>
                         <p class="text-muted">Tickets Available!</p>
-                </div>               
-            </div> 
+                </div>
+            </div>
             </a>-->
 <!-- Event -->
         	<!-- <a href= "http://www.brownpapertickets.com/event/juicecrawl.com/2486893" target="_blank">
@@ -263,7 +289,7 @@
                 <div class="event-caption">
                         <h4>Aug 7</h4>
                         <p class="text-muted">Tickets Available!</p>
-                </div>               
+                </div>
             </div>
             </a> -->
 <!--Last Event -->
@@ -273,7 +299,7 @@
                     <div class="event-caption">
                         <h4>Join the Newsletter!</h4>
                         <p class="text-muted">We'll keep you up to date.</p>
-                </div>               
+                </div>
             </div>
             </a>
             <a href="corporate.html" target="_blank">
@@ -282,7 +308,7 @@
                     <div class="event-caption">
                         <h4>Private Events</h4>
                         <p class="text-muted">Contact us to arrange a private event for your friends, family or company.</p>
-                </div>               
+                </div>
             </div>
             </a>
             </div>
@@ -313,7 +339,7 @@
                             </div>
                              <div class="col-md-2 col-sm-2">
                                 <a href="http://us1.campaign-archive1.com/?u=6e7285228004ce58879d3c4faid=775f21edc4&e=1ceaa49e2a" target="_blank"><img class="img-responsive center-block" src="images/wellgood.jpg" alt="Well + Good Logo"></a>
-                            </div>            
+                            </div>
                         </div>
                     </slide>
                     <slide>
@@ -328,7 +354,7 @@
                                 <a href="http://blogs.villagevoice.com/forkintheroad/2014/10/this_weekends_five_best_food_events_11.php" target="_blank"><img class="img-responsive center-block" src="images/villagevoice.png" alt="Village Voice Logo"></a>
                             </div>
                             <div class="col-md-2 col-sm-2">
-                                <a href="http://blog.urbanoutfitters.com/blog/without_walls_green_juice_crawl?cm_re=Blog_Content-_-B11-_-without_walls_green_juice_crawl" target="_blank"><img class="img-responsive center-block" src="images/uo.png" alt="Urban Outfitters Logo"></a> 
+                                <a href="http://blog.urbanoutfitters.com/blog/without_walls_green_juice_crawl?cm_re=Blog_Content-_-B11-_-without_walls_green_juice_crawl" target="_blank"><img class="img-responsive center-block" src="images/uo.png" alt="Urban Outfitters Logo"></a>
                             </div>
                             <div class="col-md-2 col-sm-2">
                                 <a href="http://www.local802afm.org/2014/11/your-body-is-your-instrument/" target="_blank"><img class="img-responsive center-block" src="images/local802logo.jpg" alt="802 NYC Musicians Union Logo"></a>
@@ -344,7 +370,7 @@
                                 <a href="http://nypost.com/2015/09/30/juice-crawls-are-the-death-knell-of-new-york-nightlife/" target="_blank"><img class="img-responsive center-block" src="images/nypost.png" alt="Ny Post Logo"></a>
                             </div>
                             <div class="col-md-3 col-sm-3">
-                            <a href="http://nypost.com/2015/09/30/juice-crawls-are-the-death-knell-of-new-york-nightlife/" target="_blank"><img class="img-responsive center-block" src="images/timeout.png" alt="Time Out Logo"></a>                                              
+                            <a href="http://nypost.com/2015/09/30/juice-crawls-are-the-death-knell-of-new-york-nightlife/" target="_blank"><img class="img-responsive center-block" src="images/timeout.png" alt="Time Out Logo"></a>
                             </div>
                             <div class="col-md-3 col-sm-3">
                             <a href="http://hauteliving.com/2015/10/how-juice-crawl-is-changing-nyc-nightlife/588695/" target="_blank"><img class="img-responsive center-block" src="images/hauteliving.png" alt="Haute Living Logo"></a>
@@ -352,7 +378,7 @@
                         </div>
                     </slide>
                 </carousel>
-                
+
             </div>
         </section>
 
@@ -387,34 +413,34 @@
                     <slide>
                         <a href="http://us1.campaign-archive1.com/?u=6e7285228004ce58879d3c4fa&id=775f21edc4&e=1ceaa49e2a" target="_blank"><img class="img-responsive center-block" src="images/wellgood.jpg" alt="Well + Good Logo"></a>
                     </slide>
-                    <slide>    
+                    <slide>
                         <a href="http://www.stayingskinnyinthecity.com/#!Juice-Crawl-soho/cu6k/55d54a3f0cf24b341cac6633" target="_blank"><img class="img-responsive center-block" src="images/skinny.jpg" alt="Skinny in the City Logo"></a>
                     </slide>
-                    <slide>    
+                    <slide>
                         <a href="http://nypost.com/2015/09/30/juice-crawls-are-the-death-knell-of-new-york-nightlife/" target="_blank"><img class="img-responsive center-block" src="images/nypost.png" alt="Ny Post Logo"></a>
                     </slide>
-                    <slide>    
+                    <slide>
                         <a href="" target="_blank"><img class="img-responsive center-block" src="images/timeout.png" alt="Time Out Logo"></a>
                     </slide>
                     <slide>
-                        <a href="http://blog.urbanoutfitters.com/blog/without_walls_green_juice_crawl?cm_re=Blog_Content-_-B11-_-without_walls_green_juice_crawl" target="_blank"><img class="img-responsive center-block" src="images/uo.png" alt="Urban Outfitters Logo"></a> 
+                        <a href="http://blog.urbanoutfitters.com/blog/without_walls_green_juice_crawl?cm_re=Blog_Content-_-B11-_-without_walls_green_juice_crawl" target="_blank"><img class="img-responsive center-block" src="images/uo.png" alt="Urban Outfitters Logo"></a>
                     </slide>
                     <slide>
                     	<a href="http://hauteliving.com/2015/10/how-juice-crawl-is-changing-nyc-nightlife/588695/" target="_blank"><img class="img-responsive center-block" src="images/hauteliving.png" alt="Haute Living Logo"></a>
-                    </slide>     
+                    </slide>
 
                 </carousel>
-                
+
             </div>
         </section>
-<!--Footer-->      
+<!--Footer-->
 <footer class="row">
 
     <div class="col-md-4 text-center" id="contact">
 
                <br>
                <p><i class="fa fa-phone"></i>&nbsp;&nbsp; <a href="tel:908-758-4297" id="Phone">(908)-7-JUICY-7</a></p>
-               <p><i class="fa fa-envelope"></i>&nbsp;&nbsp; <a href="mailto:anna@juicecrawl.com" id="Email">anna [at] juicecrawl [dot] com</a></p>   
+               <p><i class="fa fa-envelope"></i>&nbsp;&nbsp; <a href="mailto:anna@juicecrawl.com" id="Email">anna [at] juicecrawl [dot] com</a></p>
     </div>
     <br class="visible-xs">
 
@@ -432,15 +458,15 @@
                         </div>
                     </form>
     </div>
-                
-                 
+
+
             </div>
-            
-            
+
+
             <div class="col-md-4 hidden-xs">
-                
+
                 <br>
-                
+
                 <ul class="linear">
                     <li><a href="https://twitter.com/JuiceCrawl" target="_blank" id="Twitter" class="fa fa-twitter web"></a></li>
                     <li><a href="https://www.facebook.com/JuiceCrawl" target="_blank" id="Facebook" class="fa fa-facebook web"></a></li>
@@ -450,9 +476,9 @@
                 </ul>
                 <!-- <p class="text-center">&copy; 2015</p> -->
             </div>
-            
+
             <div class="col-md-4 visible-xs hidden-md">
-                
+
                 <br>
                 <h4 class="text-center">Social</h4>
                 <ul class="linear" style="font-size: 2.8em;">
@@ -462,10 +488,10 @@
                     <li><a href="https://plus.google.com/+juicecrawl" id="Google+" class="fa fa-google-plus mobile"></a></li>
                     <li><a href="http://www.youtube.com/subscription_center?add_user=JUICECRAWL" id="Youtube" class="fa fa-youtube mobile"></a></li>
                 </ul>
-                
+
             </div>
         </footer>
-        
+</div>
 
     </div>
 
@@ -496,7 +522,7 @@
     <noscript>
         <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l5tu8&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
         <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l5tu8&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-    </noscript>  
+    </noscript>
     <!-- twitter "Home Page Sign Up" website tag for retargeting, conversion tracking -->
     <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -512,6 +538,23 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/juicecrawl.js"></script>
+    <script type="text/javascript">
+
+    //fix ticket button at top
+ $( document ).ready(function() {
+    var ticket = $( "#ticket-button" );
+
+    $( window ).scroll(function(e){
+        console.log($( window ).scrollTop())
+        if ($( window ).scrollTop() > 300) {
+              ticket.addClass("fix-ticket").removeClass("ghost-button")
+            } else {
+              ticket.removeClass("fix-ticket").addClass("ghost-button");
+            }
+    })
+
+});
+    </script>
 
 </body>
 
