@@ -36,6 +36,8 @@
     <script type="text/javascript" src="js/app.js"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <!--Data Layer for Google Tag Manager -->
     <script> dataLayer = []; </script>
@@ -240,7 +242,7 @@
         </div>
     </section>
     <div><img src="img/group-pics/earthday2015b.jpg" class="center-block img-responsive" alt="Juice Crawl Image"></div>
-    <h3 class="section-heading text-center">Experience something you've never tried before. Sample up to 30 different juices + a workout! A ticket covers it all.</h3>
+    <h3 class="col-xs-12 section-heading text-center">Experience something you've never tried before. Sample up to 30 different juices + a workout! A ticket covers it all.</h3>
 <!--Video Section -->
     <section>
         <div>
@@ -258,14 +260,20 @@
     </section>
 
 <!--Event Section -->
-<section id="events">
-    <div>
-        <div>
+<section>
+
                 <div class="col-lg-12 text-center">
-                    <!-- <h1 class="section-heading"> Juice Crawl: Select An Event </h1> -->
+                    <h1 class="section-heading"> Purchase Tickets</h1>
                     <!-- EevntBrite Widget -->
-                    <h2 class="col-sm-12">St. Pat's Day Juice Crawl - March 18th - Soho</h2>
-                   <div style="width:100%; text-align:left;"><iframe src="https://www.eventbrite.com/tickets-external?eid=31531145505&ref=etckt" frameborder="0" height="465" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" allowtransparency="true"></iframe></div>
+                    <div  id="events" >
+                        <h2 class="col-sm-12">St. Pat's Day Juice Crawl 2017</h2>
+                        <h2>March 18th - Soho - 2pm</h2>
+                        <h4 class="text-center address">Pon De FLO Studio - 156 Mott Street - New York, NY 10013</h4>
+                    </div>
+                      <div class="leprichan-div">
+                        <img class='leprichan' src="img/leprichan.png">
+                    </div>
+                   <div style="width:100%; text-align:left;" id="eventbrite"><iframe src="https://www.eventbrite.com/tickets-external?eid=31531145505&ref=etckt&aff=webIframe" frameborder="0" height="515" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" allowtransparency="true"></iframe></div>
             <div>
                 <a href="contact.html#newsletter" target="_blank">
                 <div class="col-md-4 col-sm-6 col-xs-6">
@@ -288,8 +296,7 @@
             </div>
             <div class="clear-fix"></div>
             </div>
-        </div>
-    </div>
+
 </section>
 <!--End Event -->
 <!-- Media Coverage -->
@@ -511,30 +518,20 @@
     var ticket = $( "#ticket-button" );
 
     $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
+        var scroll = $(window).scrollTop();
 
-    if(scroll >= $('#scroll-id').offset().top){
-        ticket.addClass("fix-ticket").removeClass("ghost-button")
-    }else{
-        ticket.removeClass("fix-ticket").addClass("ghost-button");
-    }
-    // ticket.toggleClass('fix-ticket',
-    //  //add 'fix-ticket' class when div position match or exceeds else remove the 'ok' class.
-    //   scroll >= $('#scroll-id').offset().top
-    // );
+        if(scroll >= $('#scroll-id').offset().top){
+            ticket.addClass("fix-ticket").removeClass("ghost-button").text("Purchase St. Pat's Day Tickets")
+        }else{
+            ticket.removeClass("fix-ticket").addClass("ghost-button").fadeIn(100).text("Tickets")
+        }
     });
-    //trigger the scroll
-    // $(window).scroll();
 
-    // $( window ).scroll(function(e){
-    //     console.log($( window ).scrollTop())
-    //     if ($( window ).scrollTop() > 300) {
-    //           ticket.addClass("fix-ticket").removeClass("ghost-button")
-    //         } else {
-    //           ticket.removeClass("fix-ticket").addClass("ghost-button");
-    //         }
-    // })
-
+    var ticketButton = document.getElementById("ticket-button");
+    ticketButton.onclick = function(){
+        hidden = true;
+        ticket.fadeOut(700);
+    }
 });
     </script>
 
