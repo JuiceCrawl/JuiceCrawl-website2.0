@@ -14,9 +14,15 @@ body{
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: #1ecc1a;
+     background: #1ecc1a;
+  background-image: -webkit-linear-gradient(top, #1ecc1a, #17653b);
+  background-image: -moz-linear-gradient(top, #1ecc1a, #17653b);
+  background-image: -ms-linear-gradient(top, #1ecc1a, #17653b);
+  background-image: -o-linear-gradient(top, #1ecc1a, #17653b);
+  background-image: linear-gradient(to bottom, #1ecc1a, #17653b);
     color:#fff;
-    padding:10px;
+    padding:20px 0;
+    font-size: 1.3em;
     width: 100%;
     z-index: 1;
     border: none;
@@ -25,7 +31,17 @@ body{
 }
 
 .btn-success{
-    background-color: #1ecc1a;
+      background: #1ecc1a;
+      background-image: -webkit-linear-gradient(top, #1ecc1a, #17653b);
+      background-image: -moz-linear-gradient(top, #1ecc1a, #17653b);
+      background-image: -ms-linear-gradient(top, #1ecc1a, #17653b);
+      background-image: -o-linear-gradient(top, #1ecc1a, #17653b);
+      background-image: linear-gradient(to bottom, #1ecc1a, #17653b);
+      border: none;
+}
+
+.btn-success:hover{
+    cursor: pointer;
 }
 
 img{
@@ -207,12 +223,19 @@ body .navbar {
     color: #fed136;
     background-color: transparent;
 }
+.navbar-default {
+    border: none;
+}
 
 @media(min-width:768px) {
 
+    .navbar-right{
+        margin: 0px;
+    }
+
     .navbar-default {
         padding: 0px 0;
-        border: 0;
+        border: none;
         background-color: transparent;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
@@ -253,10 +276,7 @@ body .navbar {
 
 /* Media Quotes on front page  */
 .quotes{
-/*    padding-bottom: 20px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 25px;*/
+
 }
 
 .quotes p{
@@ -309,7 +329,6 @@ header .intro-text .intro-lead-in {
 }
 
 header .intro-text .intro-heading {
-    margin-bottom: 25px;
     font-family: "Century Gothic",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2.5em;
     font-style: none;
@@ -338,8 +357,8 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
+        padding: 0 15px;
     font-family: "Century Gothic",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-/*    font-size: 50px;*/
     font-style: none;
     line-height: 50px;
     display:block;
@@ -597,14 +616,14 @@ body {
 @media(max-width:600px) {
     header .intro-text .intro-heading{
         font-size: 1.7em;
-        padding: 0 20px;
+        padding: 0px 15px 11px 15px
     }
 }
 
 @media(max-width:400px) {
     header .intro-text .intro-heading{
         font-size: 1.2em;
-        padding: 15px 15px 15px 15px;
+        padding: 0px 15px 11px 15px
         line-height: 1;
         margin: 0;
     }

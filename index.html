@@ -164,7 +164,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="http://www.juicecrawl.com"><img src="img/jclogo.png" class="img-responsive" style="max-width:20%"alt="Juice Crawl Logo"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -201,8 +200,8 @@
                 <div class="juicecrawl-logo"><img src="img/jclogo.png" class="center-block img-responsive" style="max-width:70%"alt="Juice Crawl Logo">
                 </div>
                <!--  <div class="intro-lead-in">A Pub Crawl for Juice</div> -->
-                <div class="intro-heading">Hangovers Never Felt So GOOD!</div>
-                <a id="ticket-button" href="#events" class="page-scroll btn btn-xl ghost-button">Buy Tickets</a>
+                <div id="scroll-id" class="intro-heading">Hangovers Never Felt So GOOD!</div>
+                <a id="ticket-button" href="#events" class="page-scroll btn btn-xl ghost-button">Tickets</a>
 
             </div>
         </div>
@@ -215,15 +214,12 @@
         <h1 class="section-heading text-center">What's a Juice Crawl?</h1>
         <h3 class="section-heading text-center">Think pub crawl for juice. Our events cover a mix of traveling to juice bars, drinking a lot of green juice and working out.
         </h3>
-
             <div>
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
+                <div>
                     <div id='scroll-to' class="su-youtube su-responsive-media-yes">
-                            <iframe class="text-center" width="100%" height="320" src="http://www.youtube.com/embed/Aw1wXb85gTo?modestbranding=1&controls=0&iv_load_policy=3&rel=0&showinfo=0&color=white" frameborder="0"></iframe>
+                        <iframe class="text-center" width="100%" height="320" src="http://www.youtube.com/embed/Aw1wXb85gTo?modestbranding=1&controls=0&iv_load_policy=3&rel=0&showinfo=0&color=white" frameborder="0"></iframe>
                     </div>
                 </div>
-                <div class="col-md-1"></div>
             </div>
 
         <h3 class="col-sm-12 section-heading text-center">We think healthy lifestyles can be social and fun.
@@ -231,7 +227,7 @@
         <div style="width: 70%; margin: 0 auto">
             <img src="img/group-pics/july2015b.jpg" class="center-block img-responsive" alt="Juice Crawl Image">
         </div>
-        <h3 class="section-heading text-center">We're the world's first Juice Crawl and our events have been featured nationally and internationally - just google us! We're setting a trend.
+        <h3 class="section-heading text-center">We're the world's first Juice Crawl and our events have been featured nationally and internationally! We're setting a trend.
         </h3>
        </div>
       </div>
@@ -519,14 +515,30 @@
  $( document ).ready(function() {
     var ticket = $( "#ticket-button" );
 
-    $( window ).scroll(function(e){
-        console.log($( window ).scrollTop())
-        if ($( window ).scrollTop() > 300) {
-              ticket.addClass("fix-ticket").removeClass("ghost-button")
-            } else {
-              ticket.removeClass("fix-ticket").addClass("ghost-button");
-            }
-    })
+    $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+
+    if(scroll >= $('#scroll-id').offset().top){
+        ticket.addClass("fix-ticket").removeClass("ghost-button")
+    }else{
+        ticket.removeClass("fix-ticket").addClass("ghost-button");
+    }
+    // ticket.toggleClass('fix-ticket',
+    //  //add 'fix-ticket' class when div position match or exceeds else remove the 'ok' class.
+    //   scroll >= $('#scroll-id').offset().top
+    // );
+    });
+    //trigger the scroll
+    // $(window).scroll();
+
+    // $( window ).scroll(function(e){
+    //     console.log($( window ).scrollTop())
+    //     if ($( window ).scrollTop() > 300) {
+    //           ticket.addClass("fix-ticket").removeClass("ghost-button")
+    //         } else {
+    //           ticket.removeClass("fix-ticket").addClass("ghost-button");
+    //         }
+    // })
 
 });
     </script>
